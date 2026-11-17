@@ -4,39 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#152923">
-  <title>Algo está por pasar</title>
+  <meta name="theme-color" content="#e9eee2">
+  <meta name="description" content="Una pequeña aventura de elegir un plan.">
+  <title>Un pequeño plan ✨</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <style>
-    :root { color-scheme: dark; --ink: #152923; --paper: #f4f2e9; --coral: #ff9c7d; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-width: 0; min-height: 100dvh; background: var(--ink); color: var(--paper); font-family: 'Trebuchet MS', sans-serif; }
-    main { position: relative; isolation: isolate; min-height: 100dvh; display: grid; align-items: center; overflow: hidden; padding: 2rem 1.25rem; }
-    .orbit { position: absolute; z-index: -1; width: min(82vw, 42rem); aspect-ratio: 1; right: max(-12rem, -18vw); top: 50%; translate: 0 -50%; border: 1px solid #f4f2e938; border-radius: 50%; }
-    .orbit::before, .orbit::after { content: ''; position: absolute; border: 1px solid #f4f2e926; border-radius: 50%; inset: 12%; }
-    .orbit::after { inset: 27%; border-color: #ff9c7d70; }
-    .dot { position: absolute; width: .8rem; aspect-ratio: 1; left: 50%; top: -.4rem; border-radius: 50%; background: var(--coral); transform-origin: 0 calc(min(82vw, 42rem) / 2 + .4rem); animation: orbit 18s linear infinite; }
-    .content { width: min(100%, 68rem); margin-inline: auto; }
-    .signal { display: flex; align-items: center; gap: .75rem; margin: 0 0 1.5rem; color: var(--coral); font-size: .8rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-    .signal::before { content: ''; width: 2rem; height: 1px; background: currentColor; }
-    h1 { max-width: 10ch; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(3.25rem, 11vw, 8.5rem); font-weight: 400; line-height: .93; letter-spacing: -.055em; text-wrap: balance; }
-    h1 em { color: var(--coral); font-weight: 400; }
-    .note { max-width: 32ch; margin: 2rem 0 0; color: #d7ded8; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.65; }
-    footer { position: absolute; left: 1.25rem; bottom: max(1.25rem, env(safe-area-inset-bottom)); font-size: .78rem; letter-spacing: .08em; color: #aebcb3; }
-    @keyframes orbit { to { transform: rotate(360deg); } }
-    @media (min-width: 48rem) { main { padding: 4rem; } .content { padding-left: 4vw; } footer { left: 4rem; } }
-    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
-  </style>
+  <link rel="preload" href="/fonts/baloo-2-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/nunito-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
 </head>
 <body>
-  <main>
-    <div class="orbit" aria-hidden="true"><span class="dot"></span></div>
-    <section class="content" aria-labelledby="title">
-      <p class="signal">Una pequeña pausa</p>
-      <h1 id="title">Algo bonito está <em>por pasar.</em></h1>
-      <p class="note">Esta es solo la primera señal. Lo demás se irá revelando paso a paso.</p>
-    </section>
-    <footer>HECHO CON CURIOSIDAD · 2026</footer>
-  </main>
+  <div class="background-doodles" aria-hidden="true">
+    <span class="doodle doodle-one">✿</span>
+    <span class="doodle doodle-two">✦</span>
+    <svg class="doodle-path" viewBox="0 0 180 100" fill="none"><path d="M4 84C40 4 94 110 176 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 9"/></svg>
+  </div>
+  <div class="app-shell">
+    <header class="app-header">
+      <button class="icon-button" id="back-button" type="button" aria-label="Volver a la pantalla anterior" hidden>←</button>
+      <a class="brand" href="./" aria-label="Ir al inicio">algo bonito <span>✿</span></a>
+      <div class="progress" id="progress" aria-label="Progreso"></div>
+    </header>
+    <main id="app" class="app-content" aria-live="polite"></main>
+    <footer class="app-footer">hecho con un poquito de valentía <span aria-hidden="true">↗</span></footer>
+  </div>
+  <noscript><p class="noscript">Activa JavaScript para poder elegir tu plan. 🌱</p></noscript>
 </body>
 </html>
