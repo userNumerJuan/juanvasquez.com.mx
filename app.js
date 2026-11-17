@@ -85,7 +85,7 @@ function identityScreen() {
         <button class="choice-button" type="button" data-action="identity-no">No 👀</button>
       </div>
       ${state.identityReady ? `
-        <p class="success-note" role="status"><span aria-hidden="true">✨</span> ¡Perfecto! Ya podemos continuar.</p>
+        <p class="success-note" role="status">Perfecto, presiona abajo para continuar.</p>
         <button class="primary-button continue-button" type="button" data-action="continue">Continuar <span aria-hidden="true">→</span></button>
       ` : '<p class="soft-note"><span aria-hidden="true">👆</span> Elige una respuesta para seguir.</p>'}
     </section>`;
@@ -97,7 +97,7 @@ function exitScreen() {
       <div class="hero-sticker" aria-hidden="true">🙈</div>
       <p class="eyebrow">Un momento…</p>
       <h1 id="screen-title" tabindex="-1">Sal de aquí, por favor.</h1>
-      <p class="intro">Esta pequeña aventura es solamente para Graceland. 🌿</p>
+      <p class="intro">Only for Graceland.</p>
       <button class="secondary-button" type="button" data-action="try-again">← Volver a intentarlo</button>
     </section>`;
 }
@@ -144,7 +144,7 @@ function foodScreen() {
       <p class="intro">Muy bien, elige una de estas tres opciones. Aquí no hay respuestas incorrectas. 😋</p>
       <div class="option-list">
         ${[
-          ['La Capital', '🥩', 'Algo rico y sin complicarnos.'],
+          ['Algun lugar de Mariscos con nombre de sinaloa', '🦐', 'Algo rico y sin complicarnos.'],
           ['Mi Casa', '🏡', 'Como sentirse en casa, pero sin lavar platos.'],
           ['Kazoku Sushi Bar', '🍣', 'Para cuando el antojo pide sushi.']
         ].map(([name, emoji, note]) => `
