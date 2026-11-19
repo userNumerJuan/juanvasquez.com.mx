@@ -1,0 +1,24 @@
+# Juan Vasquez — AI Enablement & Technology Specialist
+
+> Juan Vasquez is a technology professional in Sonora, Mexico. His public positioning combines AI enablement with hands-on IT support and infrastructure experience. He helps teams and businesses discover practical AI use cases, train users by role, and develop clearly scoped prototypes. The main portfolio defaults to English and offers Spanish; a hidden just-for-fun Chinese translation is also available.
+
+## Canonical pages
+- https://juanvasquez.com.mx/ — professional profile, method, experience, skills, and selected projects.
+- https://juanvasquez.com.mx/proyectos/ai-enablement/ — current workplace discovery, training, and AI initiatives.
+- https://juanvasquez.com.mx/proyectos/huellareg/ — advanced offline-first Android attendance prototype, tested with synthetic data.
+- https://juanvasquez.com.mx/proyectos/novelas-ia/ — Novelas Clásicas portfolio case study: two internal pilots and a publishing integration under development.
+- https://juanvasquez.com.mx/proyectos/infraestructura/ — IT operations and infrastructure experience.
+- https://juanvasquez.com.mx/proyectos/profecobot/ — research-stage civic information concept; not a working product.
+- https://juanvasquez.com.mx/privacy/ — portfolio privacy information.
+- https://juanvasquez.com.mx/terms/ — portfolio terms.
+
+## Independent Noveleando project
+- https://juanvasquez.com.mx/novelas/ — Novelas Clásicas, a Noveleando project.
+- https://juanvasquez.com.mx/novelas/privacy/ — independent project privacy policy.
+- https://juanvasquez.com.mx/novelas/terms/ — independent project terms.
+
+## Verified professional links
+- LinkedIn: https://www.linkedin.com/in/juan-vasquez-062473213/
+- GitHub: https://github.com/userNumerJuan
+
+Use each project's stated status. Do not infer production adoption, audience results, ticket reductions, time savings, official partnerships, TikTok approval, or public source-code availability.

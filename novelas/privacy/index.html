@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Novelas Clásicas</title>
+  <meta name="nv-title-en" content="Privacy Policy | Novelas Clásicas"><meta name="nv-title-es" content="Política de privacidad | Novelas Clásicas">
+  <meta name="description" content="Privacy practices and intended OAuth data handling for Novelas Clásicas and its local publishing tool under development.">
+  <meta name="theme-color" content="#162b26"><link rel="canonical" href="https://juanvasquez.com.mx/novelas/privacy/"><link rel="icon" href="/assets/noveleando-icon.png" type="image/png"><link rel="stylesheet" href="/src/novelas.css">
+</head>
+<body>
+<a class="nv-skip" href="#nv-content" data-es="Saltar al contenido">Skip to content</a>
+<header class="nv-header"><div class="nv-container nv-header-inner"><a class="nv-brand" href="/novelas/"><span class="nv-brand-mark" aria-hidden="true">N</span><span class="nv-brand-copy">Novelas Clásicas<small>Noveleando</small></span></a><div class="nv-nav-wrap"><nav class="nv-nav" aria-label="Project navigation"><a href="/novelas/" data-es="Inicio">Home</a><a href="/novelas/terms/" data-es="Términos">Terms</a><a href="/novelas/data-deletion/" data-es="Eliminación de datos">Data deletion</a></nav><button class="nv-language" type="button" data-nv-language aria-label="Ver en español">ES</button></div></div></header>
+<main id="nv-content">
+<section class="nv-page-hero"><div class="nv-container"><nav class="nv-breadcrumb"><a href="/novelas/" data-es="Inicio">Home</a> / <span data-es="Privacidad">Privacy</span></nav><p class="nv-eyebrow" data-es="Vigente desde el 18 de noviembre de 2026">Effective November 18, 2026</p><h1 data-es="Privacidad acorde al comportamiento real.">Privacy matched to actual behavior.</h1><p data-es="La integración con TikTok está en desarrollo. Actualmente este sitio no recibe ni conserva datos de usuarios de TikTok.">The TikTok integration is under development. This website currently does not receive or retain TikTok user data.</p></div></section>
+<div class="nv-section nv-narrow">
+<article class="nv-legal-section" lang="en">
+<h2>Privacy Policy</h2>
+<p><strong>Controller:</strong> Juan Vasquez / Noveleando, Sonora, Mexico. This policy applies to the Novelas Clásicas microsite, its static OAuth callback, and the local creator tool under development.</p>
+<h3>1. Current status</h3>
+<p>The TikTok integration is not operational. No public account service is offered. At this stage, the website and static callback do not collect TikTok profile information, OAuth tokens, videos, or publishing logs. The intended future behavior is described separately below and will be updated before activation.</p>
+<h3>2. Website data</h3>
+<ul><li>No user registration, contact form, advertising, third-party analytics, or tracking cookies are used.</li><li>The language preference is stored only in your browser’s <code>localStorage</code> under <code>nv-language</code>. Clearing this site’s browser data removes it.</li><li>If you choose to email us, your provider processes the address, message and delivery metadata. We use that information only to respond to your inquiry or deletion request.</li></ul>
+<h3>3. Intended TikTok OAuth scopes and data</h3>
+<p>When the integration is implemented and authorized, the local tool will request only the scopes needed for the creator’s selected action:</p>
+<ul><li><code>user.info.basic</code>: access to limited basic profile information, such as <code>open_id</code> and creator display name when returned by TikTok, to identify the authorized account.</li><li><code>video.upload</code>: to send a creator-selected video as a draft after explicit confirmation.</li><li><code>video.publish</code>: to publish a creator-selected video only after review of its metadata and privacy settings and explicit confirmation.</li></ul>
+<p>The local flow may process the selected video file, caption or title, visibility and privacy metadata, the authorization response, and tokens needed to execute the requested action. The static website does not receive those videos or tokens.</p>
+<h3>4. Authorization codes and tokens</h3>
+<p>The static callback reads <code>code</code>, <code>state</code>, <code>error</code> and <code>error_description</code> from the URL and displays them only in the current browser tab. It does not use <code>localStorage</code>, transmit parameters to third parties, include a <code>client_secret</code>, or exchange codes for tokens. The code-to-token exchange must occur in the creator’s local tool or a secure backend, never in this public page.</p>
+<p>Tokens must be used only to execute actions requested by the creator. The local tool’s exact token-storage and retention behavior has not yet been finalized; no unimplemented security or retention promise is made here. This section will be replaced with verified behavior before activation.</p>
+<h3>5. Sharing and sale of data</h3>
+<p>We do not sell or share TikTok user data with third parties. When the local integration becomes operational, data will be transmitted to TikTok’s official API only as necessary for an action initiated and authorized by the creator. This website has no advertising or analytics recipients.</p>
+<h3>6. Retention and deletion</h3>
+<p>Because the integration is not operational, Noveleando currently retains no TikTok profile data, tokens, video files, or publishing logs. The callback retains no authorization code after the tab is closed and replaces the address-bar URL after capturing it for display. Browser behavior outside the site’s control may still retain visited-page information until the user clears browser history.</p>
+<p>You can clear the site’s language preference through your browser, revoke Noveleando’s access from your TikTok account’s app permissions or connected-apps settings, and request deletion of email correspondence through the contact below. Instructions are also available on the <a href="/novelas/data-deletion/">data deletion page</a>.</p>
+<h3>7. Changes and contact</h3>
+<p>Material changes will be posted at this URL with an updated effective date. Before any integration is enabled, this policy will be reviewed so it matches actual scopes, storage, retention and deletion behavior. For privacy questions or deletion requests, use the contact button below.</p>
+</article>
+<hr class="nv-divider">
+<article class="nv-legal-section" lang="es">
+<h2>Política de privacidad</h2>
+<p><strong>Responsable:</strong> Juan Vasquez / Noveleando, Sonora, México. Esta política aplica al micrositio de Novelas Clásicas, su callback OAuth estático y la herramienta local del creador en desarrollo.</p>
+<h3>1. Estado actual</h3>
+<p>La integración con TikTok no está operativa. No se ofrece un servicio público de cuentas. En esta etapa, el sitio y el callback estático no recopilan información de perfil de TikTok, tokens OAuth, videos ni registros de publicación. El comportamiento futuro previsto se describe por separado y se actualizará antes de su activación.</p>
+<h3>2. Datos del sitio web</h3>
+<ul><li>No se utilizan registros de usuario, formularios de contacto, publicidad, analítica de terceros ni cookies de seguimiento.</li><li>La preferencia de idioma se guarda únicamente en <code>localStorage</code> de tu navegador bajo <code>nv-language</code>. Se elimina al borrar los datos de este sitio en el navegador.</li><li>Si decides escribir por correo, tu proveedor procesará la dirección, el mensaje y los metadatos de entrega. Usaremos esa información solo para responder a tu consulta o solicitud de eliminación.</li></ul>
+<h3>3. Alcances OAuth de TikTok y datos previstos</h3>
+<p>Cuando la integración esté implementada y autorizada, la herramienta local solicitará solo los alcances necesarios para la acción elegida por el creador:</p>
+<ul><li><code>user.info.basic</code>: acceso limitado al perfil básico, como <code>open_id</code> y nombre de creador cuando TikTok lo devuelva, para identificar la cuenta autorizada.</li><li><code>video.upload</code>: para enviar como borrador un video seleccionado por el creador después de una confirmación explícita.</li><li><code>video.publish</code>: para publicar un video seleccionado únicamente después de revisar metadatos y privacidad, y contar con confirmación explícita.</li></ul>
+<p>El flujo local podrá procesar el video seleccionado, descripción o título, visibilidad, metadatos de privacidad, respuesta de autorización y tokens necesarios para ejecutar la acción solicitada. El sitio estático no recibe esos videos ni tokens.</p>
+<h3>4. Códigos de autorización y tokens</h3>
+<p>El callback estático lee <code>code</code>, <code>state</code>, <code>error</code> y <code>error_description</code> de la URL y los muestra únicamente en la pestaña actual. No utiliza <code>localStorage</code>, no transmite parámetros a terceros, no incluye <code>client_secret</code> ni intercambia códigos por tokens. El intercambio deberá ocurrir en la herramienta local del creador o en un backend seguro, nunca en esta página pública.</p>
+<p>Los tokens deberán utilizarse solo para ejecutar acciones solicitadas por el creador. El almacenamiento y retención exactos de tokens en la herramienta local todavía no se han definido; aquí no se prometen medidas aún no implementadas. Esta sección se sustituirá por el comportamiento verificado antes de la activación.</p>
+<h3>5. Venta y compartición de datos</h3>
+<p>No vendemos ni compartimos datos de usuarios de TikTok con terceros. Cuando la integración local esté operativa, los datos se transmitirán a la API oficial de TikTok únicamente cuando sea necesario para una acción iniciada y autorizada por el creador. Este sitio no tiene destinatarios de publicidad o analítica.</p>
+<h3>6. Conservación y eliminación</h3>
+<p>Debido a que la integración no está operativa, Noveleando actualmente no conserva perfiles de TikTok, tokens, videos ni registros de publicación. El callback no conserva el código después de cerrar la pestaña y reemplaza la URL de la barra de direcciones después de capturarla para mostrarla. El navegador puede conservar información de páginas visitadas fuera del control del sitio hasta que el usuario borre su historial.</p>
+<p>Puedes borrar la preferencia de idioma desde el navegador, revocar el acceso de Noveleando desde los permisos de aplicaciones o aplicaciones conectadas de tu cuenta de TikTok, y solicitar la eliminación de correspondencia mediante el contacto siguiente. También consulta la <a href="/novelas/data-deletion/">página de eliminación de datos</a>.</p>
+<h3>7. Cambios y contacto</h3>
+<p>Los cambios relevantes se publicarán en esta URL con una fecha actualizada. Antes de habilitar una integración, esta política se revisará para que coincida con los alcances, almacenamiento, retención y eliminación reales. Para privacidad o eliminación, utiliza el botón de contacto siguiente.</p>
+</article>
+<p><button class="nv-button nv-button-dark" type="button" data-nv-email="anVhbnY5MS5jdkBnbWFpbC5jb20=" data-es="Mostrar correo de privacidad">Reveal privacy contact email</button></p>
+</div>
+</main>
+<footer class="nv-footer"><div class="nv-container nv-footer-grid"><p class="nv-small">Novelas Clásicas · Noveleando</p><div class="nv-footer-links"><a href="/novelas/" data-es="Inicio">Home</a><a href="/novelas/terms/" data-es="Términos">Terms</a><a href="/novelas/data-deletion/" data-es="Eliminación de datos">Data deletion</a></div></div></footer>
+<script type="module" src="/src/novelas.js"></script>
+</body></html>

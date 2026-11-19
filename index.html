@@ -1,33 +1,336 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#e9eee2">
-  <meta name="description" content="Una pequeña aventura de elegir un plan.">
-  <title>Un pequeño plan ✨</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="/fonts/baloo-2-700.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/nunito-400.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/app.js" defer></script>
+  <title>Juan Vasquez | AI Enablement & Technology Specialist</title>
+  <meta name="title-en" content="Juan Vasquez | AI Enablement & Technology Specialist">
+  <meta name="title-es" content="Juan Vasquez | AI Enablement y Technology Specialist">
+  <meta name="title-zh" content="Juan Vasquez | AI 赋能与技术专家">
+  <meta name="description" content="Juan Vasquez helps teams adopt AI through practical training, workflow discovery and responsible prototyping, grounded in IT support and infrastructure experience.">
+  <meta name="theme-color" content="#14252b">
+  <link rel="canonical" href="https://juanvasquez.com.mx/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Juan Vasquez | AI Enablement Specialist">
+  <meta property="og:description" content="Technology people actually adopt. Practical AI enablement grounded in real IT operations.">
+  <meta property="og:url" content="https://juanvasquez.com.mx/">
+  <meta property="og:image" content="https://juanvasquez.com.mx/assets/og-image.jpg">
+  <meta property="og:image:alt" content="Professional portrait of Juan Vasquez">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Vasquez",
+    "url": "https://juanvasquez.com.mx/",
+    "image": "https://juanvasquez.com.mx/assets/juan-vasquez.webp",
+    "jobTitle": "Technology Specialist II",
+    "description": "AI Enablement Specialist with experience in IT support, infrastructure and practical technology adoption.",
+    "homeLocation": {"@type": "Place", "name": "Sonora, Mexico"},
+    "knowsLanguage": ["es", "en"],
+    "knowsAbout": ["AI Enablement", "Microsoft 365", "IT Support", "Infrastructure", "Copilot Studio"],
+    "sameAs": [
+      "https://www.linkedin.com/in/juan-vasquez-062473213/",
+      "https://github.com/userNumerJuan"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
-  <div class="background-doodles" aria-hidden="true">
-    <span class="doodle doodle-one">✿</span>
-    <span class="doodle doodle-two">✦</span>
-    <svg class="doodle-path" viewBox="0 0 180 100" fill="none"><path d="M4 84C40 4 94 110 176 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 9"/></svg>
-  </div>
-  <div class="app-shell">
-    <header class="app-header">
-      <button class="icon-button" id="back-button" type="button" aria-label="Volver a la pantalla anterior" hidden>←</button>
-      <a class="brand" href="./" aria-label="Ir al inicio">algo agradable <span>✿</span></a>
-      <div class="progress" id="progress" aria-label="Progreso"></div>
-    </header>
-    <main id="app" class="app-content" aria-live="polite"></main>
-    <footer class="app-footer"><span aria-hidden="true">✨</span></footer>
-  </div>
-  <noscript><p class="noscript">Activa JavaScript para poder elegir tu plan. 🌱</p></noscript>
+  <a class="skip-link" href="#contenido" data-en="Skip to content">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Juan Vasquez, inicio" data-en-aria="Juan Vasquez, home">
+        <span class="brand-mark" aria-hidden="true"><span>JV</span></span>
+        <span>Juan Vasquez</span>
+      </a>
+      <div class="nav-wrap">
+        <button class="language-button" type="button" data-language-toggle aria-label="View site in English" aria-pressed="false">EN</button>
+        <button class="icon-button menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menú" data-en-aria="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Navegación principal" data-en-aria="Main navigation">
+          <a href="#proyectos" data-en="Projects">Proyectos</a>
+          <a href="#metodo" data-en="Method">Método</a>
+          <a href="#experiencia" data-en="Experience">Experiencia</a>
+          <a href="#contacto" data-en="Contact">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="fractal-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker" data-en="AI Enablement · Technology · People">AI Enablement · Tecnología · Personas</p>
+          <h1 id="hero-title"><span data-en="Technology that people">Tecnología que las personas</span> <span class="accent" data-en="actually adopt.">realmente adoptan.</span></h1>
+          <p class="hero-role" data-en="AI Enablement Specialist | Technology Specialist II">AI Enablement Specialist | Technology Specialist II</p>
+          <p class="hero-description" data-en="I help teams and businesses adopt AI in practical ways: finding where it adds value, enabling people, and turning ideas into useful prototypes. My approach is grounded in hands-on IT support and infrastructure.">Ayudo a equipos y negocios a adoptar IA de forma práctica: identifico dónde aporta valor, capacito a las personas y convierto ideas en prototipos útiles. Mi enfoque parte de experiencia directa en soporte e infraestructura de TI.</p>
+          <div class="hero-actions">
+            <a class="button" href="/assets/Juan-Vasquez-CV-ES.pdf" download data-localized-cv data-en="Download résumé · EN">Descargar CV · ES</a>
+            <a class="button button-secondary" href="#proyectos" data-en="Explore selected work">Explorar proyectos</a>
+          </div>
+          <div class="hero-meta">
+            <span data-en="Sonora, Mexico">Sonora, México</span>
+            <span data-en="Spanish · Full professional English">Español · Inglés profesional</span>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <img class="portrait" src="/assets/juan-vasquez.webp" width="892" height="822" alt="Juan Vasquez, especialista en tecnología y AI Enablement" data-en-aria="Juan Vasquez, technology and AI Enablement specialist" fetchpriority="high">
+          <span class="portrait-note" data-en="Curiosity + technical judgment">Curiosidad + criterio técnico</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="kicker" data-en="About">Sobre mí</p>
+          <h2 id="about-title" data-en="From solving technical problems to enabling new ways of working.">De resolver problemas técnicos a habilitar nuevas formas de trabajar.</h2>
+          <p class="about-lead" data-en="My support experience taught me where technology actually creates friction. Today I use that perspective to discover AI use cases, train people by role, and build prototypes without losing sight of operational reality.">Mi experiencia en soporte me enseñó dónde la tecnología realmente genera fricción. Hoy uso esa perspectiva para descubrir casos de uso de IA, capacitar por rol y construir prototipos sin perder de vista la realidad operativa.</p>
+          <p class="muted" data-en="I work across manufacturing, IT operations, and personal product experiments. I prefer an honest ‘AI is not the right fit here’ over a solution looking for a problem.">Trabajo entre manufactura, operaciones de TI y experimentos personales de producto. Prefiero un honesto «aquí la IA no aplica» antes que una solución buscando un problema.</p>
+        </div>
+        <div class="about-facts" aria-label="Datos profesionales" data-en-aria="Professional facts">
+          <div class="fact"><strong>AI + IT</strong><span data-en="Adoption grounded in operational experience">Adopción basada en experiencia operativa</span></div>
+          <div class="fact"><strong>1:1</strong><span data-en="Direct, patient and role-based guidance">Orientación directa, paciente y según cada rol</span></div>
+          <div class="fact"><strong>4</strong><span data-en="roles across support, coordination, and technology administration">roles entre soporte, coordinación y administración tecnológica</span></div>
+          <div class="fact"><strong>ES / EN</strong><span data-en="Bilingual documentation and collaboration">Documentación y colaboración bilingüe</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="metodo" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker" data-en="A human-side AI method">Un método humano para la IA</p>
+          <h2 id="method-title" data-en="Enablement before automation.">Habilitar antes de automatizar.</h2>
+          <p data-en="A practical approach informed by ADKAR: begin with real work, make an honest decision, and help people adopt what makes sense.">Un enfoque práctico apoyado en ADKAR: empezar por el trabajo real, tomar una decisión honesta y ayudar a adoptar lo que sí tiene sentido.</p>
+        </div>
+        <ol class="method-list">
+          <li class="method-item">
+            <h3 data-en="Discover">Descubrir</h3>
+            <p data-en="Informal interviews and observation reveal recurring tasks, friction, and existing knowledge. The goal is to understand the workflow, not to sell a tool.">Entrevistas informales y observación para identificar tareas repetitivas, fricciones y conocimiento existente. El objetivo es entender el flujo, no vender una herramienta.</p>
+          </li>
+          <li class="method-item">
+            <h3 data-en="Decide">Decidir</h3>
+            <p data-en="Evaluate value, risk, effort, and whether AI applies at all. Sometimes the best answer is a clearer process, better documentation, or no automation.">Evaluar valor, riesgo, esfuerzo y si la IA aplica en realidad. A veces la mejor respuesta es un proceso más claro, mejor documentación o no automatizar.</p>
+          </li>
+          <li class="method-item">
+            <h3 data-en="Enable">Habilitar</h3>
+            <p data-en="Role-based training uses real examples, reusable materials, and safe boundaries. A prototype only matters when people can understand and use it.">Capacitación por rol con ejemplos reales, materiales reutilizables y límites seguros. Un prototipo solo importa cuando las personas pueden entenderlo y usarlo.</p>
+          </li>
+          <li class="method-item">
+            <h3 data-en="Improve">Mejorar</h3>
+            <p data-en="Gather feedback, document limitations, and refine the workflow. Outcomes are reported only when they can be observed and verified.">Recopilar comentarios, documentar limitaciones y refinar el flujo. Los resultados se comunican únicamente cuando pueden observarse y verificarse.</p>
+          </li>
+        </ol>
+        <p class="method-note" data-en="My differentiator is not knowing every tool. It is connecting technical support, user empathy, and practical experimentation.">Mi diferenciador no es conocer todas las herramientas. Es conectar soporte técnico, empatía por el usuario y experimentación práctica.</p>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker" data-en="Selected work">Trabajo seleccionado</p>
+          <h2 id="projects-title" data-en="Ideas are only the beginning.">Las ideas son solo el comienzo.</h2>
+          <p data-en="A selection of workplace initiatives and personal prototypes, with their actual status and my contribution clearly stated.">Una selección de iniciativas laborales y prototipos personales, con su estado real y mi contribución claramente descritos.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div>
+              <span class="project-index">01 / AI ENABLEMENT</span>
+              <h3 data-en="AI adoption grounded in daily work">Adopción de IA desde el trabajo cotidiano</h3>
+              <p data-en="Discovery interviews, direct user training, departmental documentation agents, and nursing-process digitization. Work in progress, presented without inflated adoption or savings claims.">Entrevistas de descubrimiento, capacitación directa, agentes sobre documentación departamental y digitalización de procesos de enfermería. Trabajo en curso, sin cifras infladas de adopción o ahorro.</p>
+              <ul class="tags"><li>Microsoft Copilot</li><li>Copilot Studio</li><li>ADKAR</li><li>SharePoint</li></ul>
+              <a class="text-link internal" href="/proyectos/ai-enablement/" data-en="Read the case study">Ver caso de estudio</a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <svg viewBox="0 0 420 240" fill="none"><g stroke="currentColor" stroke-width="1.2" opacity=".8"><path d="M42 184h80v-54h88V70h92v-34"/><path d="M42 184l88 22 80-48 92 18 76-76"/><circle cx="42" cy="184" r="8"/><circle cx="122" cy="130" r="8"/><circle cx="210" cy="70" r="8"/><circle cx="302" cy="36" r="8"/></g><g fill="currentColor"><rect x="182" y="118" width="56" height="8"/><rect x="182" y="134" width="88" height="8" opacity=".45"/><rect x="182" y="150" width="68" height="8" opacity=".45"/></g></svg>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-index">02 / PRODUCT PROTOTYPE</span>
+              <h3>HuellaReg</h3>
+              <p data-en="An offline-first Android attendance kiosk designed around privacy, human review, and auditable exports. Advanced functional prototype tested with synthetic data; private code.">Kiosco Android de asistencia, diseñado con privacidad, revisión humana y exportaciones auditables. Prototipo funcional avanzado probado con datos sintéticos; código privado.</p>
+              <ul class="tags"><li>Android</li><li>Kotlin</li><li>Offline-first</li><li>Privacy by design</li></ul>
+              <a class="text-link internal" href="/proyectos/huellareg/" data-en="Explore HuellaReg">Explorar HuellaReg</a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <svg viewBox="0 0 420 240" fill="none"><rect x="134" y="20" width="152" height="200" rx="8" stroke="currentColor" stroke-width="2"/><path d="M170 64h80M170 90h80M170 116h45" stroke="currentColor" stroke-width="8"/><circle cx="210" cy="172" r="22" stroke="currentColor"/><path d="M199 172l8 8 16-18" stroke="currentColor" stroke-width="2"/><path d="M60 60h42v42H42zM318 138h42v42h-42z" stroke="currentColor" opacity=".45"/></svg>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-index">03 / CREATIVE AI PIPELINE</span>
+              <h3>Novelas Clásicas</h3>
+              <p data-en="A Noveleando project: human-directed vertical micro-series adapting public-domain literature. Two internal pilot episodes; the creator-authorized publishing integration is still in development.">Un proyecto de Noveleando: microseries verticales con dirección humana que adaptan literatura de dominio público. Dos episodios piloto internos; la integración de publicación autorizada por el creador sigue en desarrollo.</p>
+              <ul class="tags"><li>Python</li><li>FFmpeg</li><li>Generative AI</li><li>OAuth 2.0</li></ul>
+              <a class="text-link internal" href="/proyectos/novelas-ia/" data-en="Read the project case study">Ver caso de estudio</a>
+              <a class="text-link project-secondary-link" href="/novelas/" data-en="Visit the independent microsite">Visitar micrositio independiente</a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <svg viewBox="0 0 420 240" fill="none"><rect x="154" y="16" width="112" height="208" stroke="currentColor" stroke-width="2"/><path d="M176 56l68 38-68 38V56z" stroke="currentColor"/><rect x="40" y="48" width="76" height="126" stroke="currentColor" opacity=".35"/><path d="M52 60l52 28-52 28V60zM316 60l52 28-52 28V60z" stroke="currentColor" opacity=".55"/><rect x="304" y="48" width="76" height="126" stroke="currentColor" opacity=".35"/></svg>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-index">04 / IT OPERATIONS</span>
+              <h3 data-en="Infrastructure that keeps work moving">Infraestructura que mantiene el trabajo en movimiento</h3>
+              <p data-en="Equipment lifecycle analysis, international user support, vendor-coordinated network expansion, legacy production support, and industrial printer setup from scratch.">Análisis de ciclo de vida de equipos, soporte internacional, expansión de red con proveedores, soporte a producción con tecnología heredada e instalación de impresoras industriales desde cero.</p>
+              <ul class="tags"><li>IT Support</li><li>Networking</li><li>Vendor management</li><li>Hardware</li></ul>
+              <a class="text-link internal" href="/proyectos/infraestructura/" data-en="View operational experience">Ver experiencia operativa</a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <svg viewBox="0 0 420 240" fill="none"><g stroke="currentColor"><rect x="52" y="82" width="72" height="76"/><rect x="174" y="38" width="72" height="76"/><rect x="296" y="128" width="72" height="76"/><path d="M124 120h50v-46h50v90M88 158h244v-26"/><circle cx="88" cy="158" r="8"/><circle cx="224" cy="128" r="8"/><circle cx="332" cy="132" r="8"/></g></svg>
+            </div>
+          </article>
+        </div>
+        <div class="lab-list">
+          <h3 data-en="In the idea lab">En el laboratorio de ideas</h3>
+          <p class="muted" data-en="ProfecoBot: research for a Spanish-language assistant that would answer questions about Profeco’s public consumer information with citations. Research stage; no proof of concept yet.">ProfecoBot: investigación para un asistente en español que respondería preguntas sobre información pública de Profeco con citas. Etapa de investigación; todavía sin prueba de concepto.</p>
+          <a class="text-link internal" href="/proyectos/profecobot/" data-en="Read the exploration">Leer la exploración</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="experiencia" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker" data-en="Experience">Experiencia</p>
+          <h2 id="experience-title" data-en="Built from the support desk outward.">Construido desde el soporte hacia afuera.</h2>
+          <p data-en="Manufacturing environments, real users, legacy constraints, and direct responsibility for keeping technology useful.">Entornos de manufactura, usuarios reales, limitantes heredadas y responsabilidad directa por mantener la tecnología útil.</p>
+        </div>
+        <div class="experience-list">
+          <article class="role">
+            <div><p class="role-date">FEB 2026 — <span data-en="PRESENT">ACTUALIDAD</span></p></div>
+            <div><h3>Technology Specialist II</h3><p class="role-company">Kimberly-Clark</p>
+              <ul>
+                <li data-en="Support plant and office users across hardware, networking, software, accounts, and access.">Soporte a usuarios de planta y oficinas en hardware, red, software, cuentas y accesos.</li>
+                <li data-en="Coordinate infrastructure projects with vendors, corporate IT, production, and finance.">Coordinación de infraestructura con proveedores, TI corporativa, producción y finanzas.</li>
+                <li data-en="Teach practical AI use during support interactions; create training content and Copilot guidance.">Enseñanza de usos prácticos de IA durante el soporte; creación de contenido y guías de Copilot.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role">
+            <div><p class="role-date">MAR 2024 — FEB 2026</p></div>
+            <div><h3>IS Help Desk Coordinator</h3><p class="role-company">Rain Bird Corporation</p>
+              <ul>
+                <li data-en="Supported onsite users and international sales teams through phone, email, and in-person assistance.">Soporte presencial y a equipos internacionales de ventas por teléfono, correo y asistencia directa.</li>
+                <li data-en="Used computer health and lifecycle analysis to prioritize upgrades within the available business budget.">Análisis del estado y ciclo de vida de equipos para priorizar actualizaciones dentro del presupuesto disponible.</li>
+                <li data-en="Coordinated vendors and network-node placement for an office expansion.">Coordinación de proveedores y ubicación de nodos de red para una expansión de oficinas.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role">
+            <div><p class="role-date">MAR 2023 — MAR 2024</p></div>
+            <div><h3>IT Administrator</h3><p class="role-company">Prestolite Wire Company</p>
+              <ul>
+                <li data-en="Prioritized operational continuity for production running on aging technology.">Prioricé la continuidad operativa de producción con tecnología envejecida.</li>
+                <li data-en="Administered infrastructure, Active Directory, servers, workstations, vendors, and help desk support.">Administración de infraestructura, Active Directory, servidores, estaciones, proveedores y mesa de ayuda.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role">
+            <div><p class="role-date">MAR 2022 — MAR 2023</p></div>
+            <div><h3>Technical Support Specialist</h3><p class="role-company">Brass Reminders</p>
+              <ul>
+                <li data-en="Set up industrial vinyl printers from scratch: assembly, network connection, and calibration for initial operations.">Puesta en marcha de impresoras industriales de vinil desde cero: ensamblado, conexión de red y calibración para iniciar operaciones.</li>
+                <li data-en="Maintained connectivity and supported production equipment and office workstations.">Mantenimiento de conectividad y soporte a equipos de producción y estaciones de trabajo.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="education">
+          <h3 data-en="Education & communication">Formación y comunicación</h3>
+          <p data-en="Master’s in Applied Artificial Intelligence — Instituto Europeo de Posgrado, in progress.">Maestría en Inteligencia Artificial Aplicada — Instituto Europeo de Posgrado, en curso.</p>
+          <p data-en="Bachelor’s in IT Engineering — Universidad Tecnológica de Nogales, 2023.">Ingeniería en Tecnologías de la Información — Universidad Tecnológica de Nogales, 2023.</p>
+          <p data-en="Speaker, Coloquio Multidisciplinario 2022 — ‘Problems = Projects’.">Ponente, Coloquio Multidisciplinario 2022 — «Problems = Projects».</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker" data-en="Capabilities">Capacidades</p>
+          <h2 id="skills-title" data-en="Tools are useful. Judgment makes them valuable.">Las herramientas ayudan. El criterio las vuelve valiosas.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group"><h3 data-en="AI enablement — practical focus">AI Enablement — enfoque práctico</h3><p data-en="Use-case discovery, user training, prompt guidance, Microsoft Copilot, Copilot Studio agents, AI-assisted reporting, reusable documentation.">Descubrimiento de casos de uso, capacitación, guía de prompts, Microsoft Copilot, agentes con Copilot Studio, reportes asistidos por IA y documentación reutilizable.</p></div>
+          <div class="skill-group"><h3 data-en="AI tools — advanced use">Herramientas de IA — uso avanzado</h3><p>Microsoft Copilot · Gemini · Kimi · AI-assisted prototyping</p></div>
+          <div class="skill-group"><h3 data-en="IT support — advanced">Soporte de TI — avanzado</h3><p>Active Directory · ServiceNow · Hardware · SharePoint · Cybersecurity awareness</p></div>
+          <div class="skill-group"><h3 data-en="Administration & infrastructure">Administración e infraestructura</h3><p data-en="Microsoft 365 Admin Center (advanced) · Server management (intermediate) · Manufacturing networking (foundational, physical setup and configuration) · Vendor coordination.">Microsoft 365 Admin Center (avanzado) · Administración de servidores (intermedio) · Redes en manufactura (básico, instalación física y configuración) · Coordinación de proveedores.</p></div>
+          <div class="skill-group"><h3 data-en="Automation">Automatización</h3><p data-en="AI-assisted Batch scripting · Server automation · Python-based personal prototypes · FFmpeg.">Scripting Batch asistido por IA · Automatizaciones en servidores · Prototipos personales con Python · FFmpeg.</p></div>
+          <div class="skill-group"><h3 data-en="How I work">Cómo trabajo</h3><p data-en="Patient teaching, honest technical scoping, bilingual documentation, user empathy, and respect for confidential business information.">Enseñanza paciente, alcance técnico honesto, documentación bilingüe, empatía por el usuario y respeto por la información confidencial.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="kicker" data-en="Contact">Contacto</p>
+          <h2 class="contact-title" id="contact-title" data-en="Let’s find where technology can genuinely help.">Busquemos dónde la tecnología puede ayudar de verdad.</h2>
+          <p class="muted" data-en="For professional opportunities, technical collaboration, AI training, or a conversation about practical adoption.">Para oportunidades profesionales, colaboración técnica, capacitación en IA o una conversación sobre adopción práctica.</p>
+        </div>
+        <div>
+          <div class="contact-actions">
+            <a class="button button-dark" href="https://www.linkedin.com/in/juan-vasquez-062473213/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="text-link" href="https://github.com/userNumerJuan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <p><button class="button button-dark" type="button" data-reveal-email="anVhbnY5MS5jdkBnbWFpbC5jb20=" data-en="Reveal contact email">Mostrar correo de contacto</button></p>
+          <div class="cv-downloads">
+            <a class="text-link internal" href="/assets/Juan-Vasquez-CV-ES.pdf" download>CV · Español (PDF)</a>
+            <a class="text-link internal" href="/assets/Juan-Vasquez-CV-EN.pdf" download>CV · English (PDF)</a>
+          </div>
+          <p class="small muted" data-en="No contact form, tracking, or analytics. Your language and puzzle preferences stay in this browser.">Sin formulario, rastreadores ni analítica. Tus preferencias de idioma y acertijo permanecen en este navegador.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="small" data-en="Designed around clarity, curiosity, and honest technical work.">Diseñado alrededor de claridad, curiosidad y trabajo técnico honesto.</p>
+      <div class="footer-links">
+        <button class="curiosity-button" type="button" data-open-puzzle data-en="A puzzle for curious minds">Un acertijo para mentes curiosas</button>
+        <a href="/privacy/" data-en="Privacy">Privacidad</a>
+        <a href="/terms/" data-en="Terms">Términos</a>
+        <button class="hidden-language" type="button" data-chinese-toggle aria-label="切换到中文" title="中">中</button>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="dialog" id="curiosity-puzzle" aria-labelledby="puzzle-title">
+    <button class="icon-button dialog-close" type="button" data-close-puzzle aria-label="Cerrar acertijo" data-en-aria="Close puzzle">×</button>
+    <p class="kicker" data-en="Curiosity unlocked">Curiosidad desbloqueada</p>
+    <h2 id="puzzle-title" data-en="Find the next number.">Encuentra el siguiente número.</h2>
+    <p data-en="A small pattern hidden in a site about discovering patterns. No timer and no penalty for trying.">Un pequeño patrón escondido en un sitio sobre descubrir patrones. Sin tiempo límite ni penalización por intentarlo.</p>
+    <div class="sequence" aria-label="2, 3, 5, 8, 13, next">2 · 3 · 5 · 8 · 13 · ?</div>
+    <form id="puzzle-form">
+      <label for="puzzle-answer" data-en="Your answer">Tu respuesta</label>
+      <input class="input" id="puzzle-answer" name="answer" type="number" inputmode="numeric" required autocomplete="off">
+      <div class="form-actions">
+        <button class="button button-dark" type="submit" data-en="Check pattern">Comprobar patrón</button>
+        <button class="text-link" type="button" data-show-hint data-en="Give me a hint">Dame una pista</button>
+      </div>
+    </form>
+    <p id="puzzle-hint" class="callout" tabindex="-1" hidden data-en="Look backward: each number relates to the two before it.">Mira hacia atrás: cada número se relaciona con los dos anteriores.</p>
+    <p class="feedback" id="puzzle-feedback" role="status" aria-live="polite"></p>
+    <div class="reward" id="puzzle-reward" hidden>
+      <h3 data-en="You found the Fibonacci sequence.">Encontraste la secuencia de Fibonacci.</h3>
+      <p data-en="Fractal mode is now active. You also unlocked a practical checklist for evaluating AI opportunities.">El modo fractal está activo. También desbloqueaste una checklist práctica para evaluar oportunidades de IA.</p>
+      <a class="button button-dark" href="/assets/Checklist-Oportunidades-IA.pdf" download data-en="Download the checklist">Descargar checklist</a>
+    </div>
+  </dialog>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

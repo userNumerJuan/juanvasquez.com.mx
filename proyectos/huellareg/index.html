@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HuellaReg | Juan Vasquez</title>
+  <meta name="description" content="Caso de estudio de HuellaReg, por Juan Vasquez. Alcance, contribución, herramientas y estado real del proyecto.">
+  <meta name="theme-color" content="#14252b">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="HuellaReg | Juan Vasquez">
+  <meta property="og:image" content="https://juanvasquez.com.mx/assets/og-image.jpg">
+  <link rel="canonical" href="https://juanvasquez.com.mx/proyectos/huellareg/">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido" data-en="Skip to content">Saltar al contenido</a>
+<header class="site-header is-solid">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Juan Vasquez, inicio" data-en-aria="Juan Vasquez, home"><span class="brand-mark" aria-hidden="true"><span>JV</span></span><span>Juan Vasquez</span></a>
+    <div class="nav-wrap">
+      <button class="language-button" type="button" data-language-toggle aria-label="View site in English" aria-pressed="false">EN</button>
+      <button class="icon-button menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menú" data-en-aria="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="site-nav" id="site-navigation" aria-label="Navegación principal" data-en-aria="Main navigation">
+        <a href="/#metodo" data-en="Method">Método</a><a href="/#proyectos" data-en="Projects">Proyectos</a><a href="/#experiencia" data-en="Experience">Experiencia</a><a href="/#contacto" data-en="Contact">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+  <section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="Migas de pan" data-en-aria="Breadcrumb"><a href="/" data-en="Home">Inicio</a> / <a href="/#proyectos" data-en="Projects">Proyectos</a></nav><p class="kicker" data-en="PERSONAL PRODUCT · ADVANCED PROTOTYPE">PRODUCTO PERSONAL · PROTOTIPO AVANZADO</p><h1>HuellaReg</h1><p data-en="An offline-first Android attendance kiosk designed to protect worker dignity, preserve auditability, and keep technical failures away from automatic penalties.">Un kiosco Android de asistencia diseñado para proteger la dignidad del trabajador, conservar trazabilidad y evitar que una falla técnica se convierta en una sanción automática.</p><div class="case-meta"><span class="status" data-en="PERSONAL PRODUCT · ADVANCED PROTOTYPE">PRODUCTO PERSONAL · PROTOTIPO AVANZADO</span></div></div></section>
+  <section class="section"><div class="container case-layout"><article class="case-content">
+<h2 data-en="The problem">El problema</h2>
+<p data-en="Small businesses often depend on paper records, informal messages, or cloud subscriptions. These approaches can create fragile records, recurring costs, and unnecessary collection of employee data. HuellaReg explores whether a single shared Android device can provide order without requiring a proprietary backend.">Los pequeños negocios suelen depender de papel, mensajes informales o suscripciones en la nube. Estos enfoques pueden crear registros frágiles, costos recurrentes y recopilación innecesaria de datos de empleados. HuellaReg explora si un único dispositivo Android compartido puede aportar orden sin exigir un backend propio.</p>
+<h2 data-en="Product decisions">Decisiones de producto</h2>
+<ul>
+<li data-en="A technical failure never becomes an automatic absence or wage deduction; incomplete evidence goes to human review.">Una falla técnica nunca se convierte en falta o descuento automático; la evidencia incompleta pasa a revisión humana.</li>
+<li data-en="The app records facts and integer minutes, not payroll amounts, taxes, or legal conclusions.">La app registra hechos y minutos enteros, no importes de nómina, impuestos o conclusiones legales.</li>
+<li data-en="No facial recognition, employee fingerprint templates, or continuous GPS tracking.">Sin reconocimiento facial, plantillas de huellas de empleados ni rastreo continuo por GPS.</li>
+<li data-en="Corrections create linked records rather than silently deleting the original event.">Las correcciones crean registros vinculados en lugar de borrar silenciosamente el evento original.</li>
+<li data-en="Encrypted local storage is the source of truth; exports are versioned and auditable.">El almacenamiento local cifrado es la fuente de verdad; las exportaciones tienen versiones y son auditables.</li>
+</ul>
+<h2 data-en="What is verified">Qué está verificado</h2>
+<p data-en="Sprints 0–4 cover the encrypted local core, private evidence capture, supervisor console, deterministic time-classification engine, dispute and reopening flows, nine-stage export protocol, and emergency USB/SAF export. The prototype has 36 passing JVM unit tests and has been executed on a physical Google Pixel 8 using synthetic data.">Los sprints 0–4 cubren el núcleo local cifrado, captura privada de evidencias, consola de supervisor, motor determinista de clasificación de tiempo, flujos de objeción y reapertura, protocolo de exportación de nueve etapas y exportación de emergencia USB/SAF. El prototipo tiene 36 pruebas unitarias JVM aprobadas y se ejecutó en un Google Pixel 8 físico con datos sintéticos.</p>
+<h2 data-en="My role and the use of AI">Mi rol y el uso de IA</h2>
+<p data-en="I originated the product idea, defined the problem, ethical constraints, workflows, and acceptance criteria, directed AI-assisted implementation, and reviewed the tests and resulting behavior. The source code is private. AI assistance is stated openly rather than presenting the work as a fully hand-coded application.">Originé la idea del producto, definí el problema, las restricciones éticas, los flujos y criterios de aceptación, dirigí la implementación asistida por IA y revisé las pruebas y el comportamiento resultante. El código es privado. La asistencia de IA se declara abiertamente en lugar de presentar el trabajo como una aplicación programada completamente a mano.</p>
+<div class="callout"><strong data-en="Status:">Estado:</strong> <span data-en="development and testing with synthetic data. It is not yet a production deployment, legal certification, or substitute for an accountant or labor adviser.">desarrollo y pruebas con datos sintéticos. Todavía no es una implementación productiva, certificación legal ni sustituto de un contador o asesor laboral.</span></div></article><aside class="case-aside" aria-label="Ficha del proyecto" data-en-aria="Project facts"><h2 data-en="Project facts">Ficha del proyecto</h2><dl><dt data-en="Type">Tipo</dt><dd data-en="Native Android · Offline-first B2B product">Android nativo · Producto B2B offline-first</dd><dt data-en="My contribution">Mi contribución</dt><dd data-en="Product concept, workflow design, AI-assisted implementation, testing">Concepto, diseño de flujos, implementación asistida por IA y pruebas</dd><dt data-en="Tools and methods">Herramientas y métodos</dt><dd>Kotlin · Android Jetpack · SQLCipher · Google Drive/Sheets · USB/SAF</dd></dl></aside></div></section>
+  <div class="container"><a class="next-project" href="/proyectos/novelas-ia/"><span data-en="Continue exploring">Continuar explorando</span><strong data-en="Novelas Clásicas">Novelas Clásicas →</strong></a></div>
+</main><footer class="site-footer"><div class="container footer-grid"><p class="small" data-en="Clear scope. Honest status. Practical technology.">Alcance claro. Estado honesto. Tecnología práctica.</p><div class="footer-links"><a href="/" data-en="Home">Inicio</a><a href="/privacy/" data-en="Privacy">Privacidad</a><a href="/terms/" data-en="Terms">Términos</a><a href="/data-deletion/" data-en="Data deletion">Eliminación de datos</a></div></div></footer>
+<script type="module" src="/src/main.js"></script></body></html>

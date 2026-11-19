@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAuth Callback | Novelas Clásicas</title>
+  <meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#162b26"><link rel="icon" href="/assets/noveleando-icon.png" type="image/png"><link rel="stylesheet" href="/src/novelas.css">
+</head>
+<body class="nv-oauth-page">
+<main class="nv-oauth-panel" aria-labelledby="oauth-title">
+  <a class="nv-brand" href="/novelas/"><span class="nv-brand-mark" aria-hidden="true">N</span><span class="nv-brand-copy">Novelas Clásicas<small>Noveleando</small></span></a>
+  <p class="nv-eyebrow" style="margin-top: 2rem;">LOCAL AUTHORIZATION HANDOFF</p>
+  <h1 id="oauth-title">OAuth callback</h1>
+  <p id="nv-oauth-status" role="status" aria-live="polite">Reading authorization response…</p>
+  <div id="nv-oauth-success" hidden>
+    <span class="nv-oauth-label">Decoded authorization code</span><output class="nv-oauth-output" id="nv-oauth-code"></output>
+    <span class="nv-oauth-label">State</span><output class="nv-oauth-output" id="nv-oauth-state"></output>
+    <span class="nv-oauth-label">Full callback URL</span><output class="nv-oauth-output" id="nv-oauth-url"></output>
+    <div class="nv-oauth-actions"><button class="nv-button" type="button" id="nv-copy-code">Copy code</button><button class="nv-button nv-button-secondary" type="button" id="nv-copy-url">Copy full URL</button></div>
+  </div>
+  <div id="nv-oauth-error" hidden>
+    <span class="nv-oauth-label">Error</span><output class="nv-oauth-output" id="nv-oauth-error-code"></output>
+    <span class="nv-oauth-label">Error description</span><output class="nv-oauth-output" id="nv-oauth-error-description"></output>
+    <button class="nv-button nv-button-secondary" type="button" id="nv-copy-error-url">Copy full URL</button>
+  </div>
+  <p class="nv-copy-status" id="nv-copy-status" role="status" aria-live="polite"></p>
+  <p class="nv-oauth-note nv-small">Paste the code only into the local tool that started this authorization. This page stores nothing, transmits nothing, contains no client secret, and never exchanges tokens.</p>
+</main>
+<script type="module" src="/src/novelas-oauth.js"></script>
+</body></html>
